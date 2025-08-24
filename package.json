@@ -1,0 +1,39 @@
+{
+  "name": "react-google-cloud-translate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepublish": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akindejuh/react-google-cloud-translate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akindejuh/react-google-cloud-translate/issues"
+  },
+  "homepage": "https://github.com/akindejuh/react-google-cloud-translate#readme",
+  "dependencies": {
+    "axios": "^1.5.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.28",
+    "@types/react-dom": "^17.0.0",
+    "typescript": "^5.2.2"
+  },
+  "files": [
+    "build",
+    "src"
+  ],
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  }
+}
