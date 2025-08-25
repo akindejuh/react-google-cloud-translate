@@ -1,6 +1,5 @@
 import { apiBaseURL } from "../constants";
 import { Translation } from "../types/interface";
-import axios from "axios";
 
 const DB_NAME = "GoogleTranslationsDB";
 const DB_TABLE_NAME = "translations";
@@ -53,12 +52,24 @@ export const getTranslationFromGoogle = async ({
 }): Promise<{
   translatedText: string;
 }[]> => {
-  const res = await axios.post(`${apiBaseURL}?key=${google_api_key}`, {
-    q: words,
-    source: "en",
-    target: language_target,
-    format: "text",
+  const res = await fetch(`${apiBaseURL}?key=${google_api_key}`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      q: words,
+      source: "en",
+      target: language_target,
+      format: "text",
+    })
   });
 
-  return res.data.data.translations;
+  if (!res.ok) {
+    throw new Error(`Google Translate API error: ${res.statusText}`);
+  }
+
+  const response = await res.json();
+
+  return response.data.translations as { translatedText: string }[];
 };
