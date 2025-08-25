@@ -23,6 +23,13 @@ export interface GoogleTranslateContextProps {
    * @example googleTranslate("hello")
   */
   googleTranslate: (word: string, disable_fetch?: boolean) => string;
+  /**
+   * Short alias for googleTranslate function. Translate a single word. Returns the untranslated word immediately, and updates later when translation is ready.
+   * @param word - The word to translate
+   * @param disable_fetch - Set to true to disable fetching from the api and rely on database only.
+   * @example gt("hello")
+  */
+  gt: (word: string, disable_fetch?: boolean) => string;
 };
 
 /** Props for GoogleTranslateProvider 

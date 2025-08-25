@@ -28,10 +28,10 @@ export default App;
 ```
 
 ## Translating Text
-Use the useTranslation hook to access the googleTranslate function and translate text in your components.
+Use the useGoogleTranslate hook to access the googleTranslate function and translate text in your components.
 
 ```tsx
-import { useTranslation } from 'react-google-cloud-translate';
+import { useGoogleTranslate } from 'react-google-cloud-translate';
 
 const App = () => {
   const { googleTranslate } = useGoogleTranslate();
@@ -42,6 +42,21 @@ const App = () => {
 };
 
 export default App;
+```
+
+or use `gt` function as a short alias:
+
+```tsx
+const App = () => {
+  const { gt } = useGoogleTranslate();
+  
+  return (
+    <h1>{gt('hello')}</h1>
+  );
+};
+
+export default App;
+
 ```
 
 ## Bulk Text Translation
