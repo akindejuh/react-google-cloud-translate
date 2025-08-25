@@ -58,7 +58,7 @@ export const GoogleTranslateProvider: React.FC<GoogleTranslateProviderProps> = (
   );
 
   return (
-    <GoogleTranslateContext.Provider value={{ googleTranslate }}>
+    <GoogleTranslateContext.Provider value={{ googleTranslate, gt: googleTranslate }}>
       {children}
     </GoogleTranslateContext.Provider>
   );
