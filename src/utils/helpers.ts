@@ -71,5 +71,5 @@ export const getTranslationFromGoogle = async ({
 
   const response = await res.json();
 
-  return response.data.translations as { translatedText: string }[];
+  return response.data.translations;
 };
