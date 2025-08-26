@@ -68,8 +68,8 @@ import { GoogleTranslateClient } from 'react-google-cloud-translate';
 
 const App = () => {
   const googleTranslateClient = new GoogleTranslateClient({
-    google_api_key: "",
-    language_target: ""
+    google_api_key: "your_api_key",
+    language_target: "rw"
   });
 
   const translateTexts = async () => {
