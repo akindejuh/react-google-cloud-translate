@@ -1,7 +1,7 @@
 {
   "name": "react-google-cloud-translate",
   "version": "1.0.2",
-  "description": "",
+  "description": "React package for Google Translation API with built-in caching to avoid refetch and boost performance.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
@@ -13,7 +13,24 @@
     "type": "git",
     "url": "git+https://github.com/akindejuh/react-google-cloud-translate.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "google",
+    "translate",
+    "google-translate",
+    "google-cloud-translate",
+    "react-translate",
+    "react-i18n",
+    "i18n",
+    "localization",
+    "internationalization",
+    "translation",
+    "language",
+    "multilingual",
+    "google-api",
+    "react-hook",
+    "react-component"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {

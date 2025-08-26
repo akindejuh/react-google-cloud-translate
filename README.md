@@ -1,5 +1,5 @@
-# Google Translation Package for React
-A translation package built using Google Translation API for React.
+# Google Translation Package for React.js
+A lightweight React package for integrating Google Translation API with built-in caching to store translations on the device, reducing refetches and improving performance for multilingual apps.
 
 ## Installation
 ```bash
@@ -28,7 +28,7 @@ export default App;
 ```
 
 ## Translating Text
-Use the useGoogleTranslate hook to access the googleTranslate function and translate text in your components.
+Use the `useGoogleTranslate` hook to access the `googleTranslate` function and translate text in your components.
 
 ```tsx
 import { useGoogleTranslate } from 'react-google-cloud-translate';
